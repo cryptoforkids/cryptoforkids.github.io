@@ -30,5 +30,6 @@ This website focuses on teaching kids the tools that modern cryptography gives u
     
 Hash functions process data to produce a fixed-size string of bytes (a hash). They are designed to be one-way functions, making it infeasible to reverse the hash back to the original data. Hash functions like SHA-256 are crucial for integrity verification, password storage, and blockchain technology.
 <p>
-##Digital Signatures
+    
+# Digital Signatures
 Digital signatures use asymmetric cryptography to simulate the security properties of a handwritten signature on digital documents. They provide proof of origin, identity, and integrity of electronic data. Algorithms like RSA, DSA (Digital Signature Algorithm), and ECDSA (Elliptic Curve Digital Signature Algorithm) are widely used.
