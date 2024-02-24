@@ -1,4 +1,3 @@
-# cryptoforkids.github.io
 # Getting started with cryptography
 Modern cryptography is used by phones and computers to keep all of our digital information secret, safe and secure.  It's used everywhere, but most people don't know how it works or even what it does.
 <p></p>
