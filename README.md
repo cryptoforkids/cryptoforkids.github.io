@@ -1,6 +1,3 @@
----
-layout: default
----
 
 # Getting started with cryptography
 
