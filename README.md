@@ -14,9 +14,23 @@ Modern cryptography gives us a set of mathematical tools that people can use to 
 
 # Math for secrets
     
-This website focuses on teaching kids the tools that modern cryptography gives us to keep secrets and detect impersonators. These tools are encryption algorithms, hash functions, and digital signatures.  We will also talk about ways to change written messages into mathematical numbers, which we need to do before using any of these tools.  Lastly, we will talk about the threat posed by very powerful computers.  If a computer is powerful enough, it can hack into an encrypted message—unless we use large enough numbers.
+This website focuses on teaching kids the tools that modern cryptography gives us to keep secrets and detect impersonators. These tools are encryption algorithms, hash functions, and digital signatures.  We will also explain ways to change written messages into mathematical numbers, which we need to do before using any of these tools.  Lastly, we will talk about the threat posed by very powerful computers.  If a computer is powerful enough, it can hack into an encrypted message—unless we use large enough numbers.
+
+## Text encoding
+
+In the realm of modern cryptography, transforming text into numbers is a fundamental step that allows us to apply mathematical algorithms to secure our data. This process, known as encoding, turns the letters and symbols we use in everyday communication into a numerical format that computers can easily manipulate. Let's dive into how this fascinating process works, making the world of digital security accessible and efficient.
+
+At the core of this transformation is the concept of character encoding schemes. One of the most basic and widely recognized schemes is the American Standard Code for Information Interchange, or ASCII. ASCII assigns a unique number to each letter, digit, and symbol. For example, in ASCII, the letter 'A' is represented by the number 65, 'B' by 66, and so on. This allows a computer to represent text as a series of numbers, making it possible to perform cryptographic operations on it.
+
+Once text is encoded into numbers, cryptographic algorithms can take over. These algorithms use mathematical operations to transform these numbers into a scrambled, unrecognizable format, effectively encrypting the message. The beauty of encoding text into numbers lies in the universality of mathematics; it doesn't matter what the original language or symbols were, as they all become numbers subject to the same cryptographic principles.
 
 ### Encryption and Decryption
+
+If you wanted to share a secret message with a friend, how could you keep that message secure?  One thing that you could do is put the message in a box that only you and your friend can open.  Other people who don't have a key to the box would not be able to read your messages.
+
+Encryption is like having a box that only opens with a special key.  You use a secret code to scramble the message so only someone with the key can unscramble it.  When we unscramble the note to turn it back into something you can read, that is called decryption.
+
+Modern cryptography gives us two types of encryption: symmetric and asymmetric. Symmetric cryptography is when you and your friend use the same key to lock and unlock the box. You both need to secretly share this one key to read the messages. Asymmetric cryptography, however, is like having a box where anyone can drop a message inside using a public key (like a slot on the box), but only you can open it with your private key. This means you never have to share your special opening key, making it a safer way to get messages from anyone without giving away how to open the box.
 
 _Symmetric Encryption:_ Uses the same key for both encryption and decryption. Algorithms like AES (Advanced Encryption Standard) are widely used for encrypting data at rest and in transit.
 
@@ -24,9 +38,9 @@ _Asymmetric Encryption (Public Key Cryptography):_ Uses a pair of keys—public 
 
 ### Hash Functions
 
-Imagine you have a magical box. Whatever you put inside the box, it gives you back a unique sticker that represents exactly what's inside. If you put the same thing in the box again, you get the same sticker. But if you change even a tiny bit of what's inside, the sticker you get is completely different.
+Imagine you have a magic gadget that turns anything you touch into a unique fingerprint. Every toy, book, or candy gets its own special mark, just like people's fingerprints—no two are the same. If you change something about the item, like putting on a sticker, the gadget gives it a brand new fingerprint. This is similar to how hash functions work in computers. They take any piece of information and turn it into a unique code, or "fingerprint," just for that info.
 
-In computers, hash functions are like that magical box. They take any message (or data) and turn it into a short string of numbers and letters, called a hash. If the message changes even a little bit, the hash changes a lot. This is really useful for checking if messages or files have been altered because the same data always gives the same hash.
+If someone tries to mess with your stuff, you can use the gadget to check if the fingerprints before and after match. If they do, all is good; if not, you know something's changed. In the digital world, hash functions do the same thing. They help make sure information hasn't been altered. If the unique code stays the same, the data is safe. But if the code changes, it's a sign something might be wrong. Hash functions act like digital detectives, ensuring everything is as it should be.
 
 Hash functions process data to produce a fixed-size string of bytes (a hash). They are designed to be one-way functions, making it infeasible to reverse the hash back to the original data. Hash functions like SHA-256 are crucial for integrity verification, password storage, and blockchain technology.
 
