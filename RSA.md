@@ -57,7 +57,7 @@ Given our ciphertext _c_, we can decrypt it using our private key to recover _m_
 
 _m = c<sup>d</sup> mod n_
 
-_m = 855<sup>2753 mod 3233_
+_m = 855<sup>2753</sup> mod 3233_
 
 After applying the RSA encryption and decryption steps with our example numbers, here's what happens:
 
