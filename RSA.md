@@ -37,32 +37,31 @@ Let's walk through an example of using the RSA algorithm with real numbers. We'l
 4. **Choose Public Key Exponent _e_:** We've chosen _e=17_, which is a common choice for small examples and is coprime with _ϕ(n)_.
 5. **Determine Private Key Exponent _d_:** Calculating the modular multiplicative inverse of **e modulo ϕ(n)**, we find _d=2753_.
 
-So, our public key is _(e,n)=(17,3233)_ and our private key is _(d,n)=(2753,3233)_.
+So, our public key is _(e,n) = (17,3233)_ and our private key is _(d,n) = (2753,3233)_.
 
 ### Encrypting a Message
 
 Suppose our message _m_ is the number _123_. We encrypt it using our public key:
 
 _c = m<sup>e</sup> mod n_
+
 _c = 123<sup>17</sup> mod 3233_
+
 _c = 
 
 The final result is our ciphertext c.
 
 ### Decrypting the Message
 
-Given our ciphertext _c_, we can decrypt it using our private key to recover mm:
+Given our ciphertext _c_, we can decrypt it using our private key to recover _m_. Let's perform these calculations to see the encryption and decryption in action.
 
-_m=cdmod_
+_m = c<sup>d</sup> mod n_
 
-Let's perform these calculations to see the encryption and decryption in action. ​
-
-​
+_m = 855<sup>2753 mod 3233_
 
 After applying the RSA encryption and decryption steps with our example numbers, here's what happens:
 
-    Encryption: The message m=123m=123 is encrypted using the public key (e,n)=(17,3233)(e,n)=(17,3233), resulting in the ciphertext c=855c=855.
-
-    Decryption: The ciphertext c=855c=855 is decrypted back into the original message m=123m=123 using the private key (d,n)=(2753,3233)(d,n)=(2753,3233).
+* Encryption: The message _m=123_ is encrypted using the public key _(e,n)=(17,3233)_, resulting in the ciphertext _c=855_.
+* Decryption: The ciphertext _c=855_ is decrypted back into the original message _m=123_ using the private key _(d,n)=(2753,3233)_.
 
 This process demonstrates how RSA encryption allows for secure communication, ensuring that only the holder of the private key can decrypt the message sent using the public key. In real-world applications, the numbers involved are significantly larger, making the encryption practically impossible to break with current technology.
