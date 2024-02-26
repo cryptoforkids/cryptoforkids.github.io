@@ -16,7 +16,7 @@ Modern cryptography gives us a set of mathematical tools that people can use to 
     
 This website focuses on teaching kids the tools that modern cryptography gives us to keep secrets and detect impersonators. These tools are encryption algorithms, hash functions, and digital signatures.  We will also explain ways to change written messages into mathematical numbers, which we need to do before using any of these tools.  Lastly, we will talk about the threat posed by very powerful computers.  If a computer is powerful enough, it can hack into an encrypted message—unless we use large enough numbers.
 
-## Text encoding
+### Text encoding
 
 In the realm of modern cryptography, transforming text into numbers is a fundamental step that allows us to apply mathematical algorithms to secure our data. This process, known as encoding, turns the letters and symbols we use in everyday communication into a numerical format that computers can easily manipulate. Let's dive into how this fascinating process works, making the world of digital security accessible and efficient.
 
