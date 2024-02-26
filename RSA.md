@@ -6,9 +6,12 @@ Although RSA was immensely popular and widely used for securing online communica
 
 Despite these challenges, RSA remains a valuable tool for educational purposes. Its conceptual simplicity, rooted in basic mathematical principles, makes it an excellent example for introducing students to the concepts of encryption and decryption. Understanding RSA provides a solid foundation in cryptography, illustrating the core ideas of public and private keys and the mathematical underpinnings of secure communications.
 
+## RSA, step-by-step
+
 If you want to encrypt a message using the RSA you just need to follow all of the steps of the RSA algorithm, detailed below.
 
 1. **Select Two Prime Numbers:** Begin by choosing two large prime numbers, pp and qq. The size of these primes ensures the security of the encryption.
+
 2. **Compute the Product nn:** Calculate n=p×qn=p×q. The number nn is used as the modulus for both the public and private keys. Its length, usually in bits, is the key length.
 3. **Calculate Euler's Totient Function (ϕ(n)ϕ(n)):** This is calculated as ϕ(n)=(p−1)×(q−1)ϕ(n)=(p−1)×(q−1). This value is used in determining the public and private keys and is crucial for ensuring that the encryption and decryption processes are inverses of each other.
 4. **Choose the Public Key Exponent ee:** Select an integer ee that is greater than 1 and less than ϕ(n)ϕ(n) such that ee and ϕ(n)ϕ(n) are coprime (i.e., their greatest common divisor is 1). This ee will be part of the public key.
