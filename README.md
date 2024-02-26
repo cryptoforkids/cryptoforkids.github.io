@@ -21,7 +21,7 @@ Modern cryptography gives us a set of mathematical tools that people can use to 
 This website focuses on teaching kids the tools that modern cryptography gives us to keep secrets and detect impersonators. These tools are encryption algorithms, hash functions, and digital signatures.  We will also talk about ways to change written messages into mathematical numbers, which we need to do before using any of these tools.  Lastly, we will talk about the threat posed by very powerful computers.  If a computer is powerful enough, it can hack into an encrypted message—unless we use large enough numbers.
 
 ## Encryption and Decryption
-    
+
 _Symmetric Encryption:_ Uses the same key for both encryption and decryption. Algorithms like AES (Advanced Encryption Standard) are widely used for encrypting data at rest and in transit.
 
 _Asymmetric Encryption (Public Key Cryptography):_ Uses a pair of keys—public and private keys. The public key is used for encryption, and the private key is used for decryption. Algorithms like RSA and elliptic curve cryptography (ECC) are fundamental for secure communication over the internet.
