@@ -1,4 +1,3 @@
-
 # Getting started with cryptography
 
 Modern cryptography is used by phones and computers to keep all of our digital information secret, safe and secure.  It's used everywhere, but most people don't know how it works or even what it does.
@@ -7,7 +6,7 @@ The funny thing is, the core algorithms underlying modern cryptography are built
 
 # What is Cryptography?
     
-Cryptography is the science of encoding and decoding information to keep it secret and secure from unauthorized access. Throughout history, it has played a crucial role in military and diplomatic communications, evolving from simple substitution ciphers used in ancient times to complex algorithms that protect our digital world today. 
+Cryptography is the science of encoding and decoding information to keep it secret and secure from unauthorized access. Throughout history, cryptography has played a crucial role in military and diplomatic communications, evolving from simple substitution ciphers used in ancient times to complex algorithms that protect our digital world today. 
 
 The advent of computers and the internet in the 20th century transformed cryptography, leading to the development of modern cryptography. This era introduced computational algorithms that leverage mathematical theories to secure data, enabling everything from secure online transactions to private communications over the internet.
 
@@ -22,12 +21,11 @@ This website focuses on teaching kids the tools that modern cryptography gives u
 _Symmetric Encryption:_ Uses the same key for both encryption and decryption. Algorithms like AES (Advanced Encryption Standard) are widely used for encrypting data at rest and in transit.
 
 _Asymmetric Encryption (Public Key Cryptography):_ Uses a pair of keys—public and private keys. The public key is used for encryption, and the private key is used for decryption. Algorithms like RSA and elliptic curve cryptography (ECC) are fundamental for secure communication over the internet.
-<p>
 
 ## Hash Functions
-    
+ 
 Hash functions process data to produce a fixed-size string of bytes (a hash). They are designed to be one-way functions, making it infeasible to reverse the hash back to the original data. Hash functions like SHA-256 are crucial for integrity verification, password storage, and blockchain technology.
-    
+
 ## Digital Signatures
 
 Digital signatures use asymmetric cryptography to simulate the security properties of a handwritten signature on digital documents. They provide proof of origin, identity, and integrity of electronic data. Algorithms like RSA, DSA (Digital Signature Algorithm), and ECDSA (Elliptic Curve Digital Signature Algorithm) are widely used.
